@@ -1,0 +1,105 @@
+/*Fonts*/
+@font-face {
+    font-family: "ClashDisplay";
+    src: url("../fonts/ClashDisplay-Variable.woff2") format("woff2"), url("../fonts/ClashDisplay-Variable.woff") format("woff"), url("../fonts/ClashDisplay-Variable.ttf") format("truetype");
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+  }
+  :root {
+    --c-dark: #032f47;
+    --c-brand: #3700ff;
+    --c-brand-light: #424578;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #0ba6ee;
+    --font-base: "ClashDisplay", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+  }
+  
+  body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+  }
+  
+  h1, h4, h5,
+  .h1, .h4, .h5 {
+    font-weight: 600;
+    color: var(--c-dark);
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+  }
+  a:hover {
+    color: var(--c-brand-light);
+  }
+  
+  .section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+  
+  .theme-shadow {
+    box-shadow: var(--box-shadow);
+  }
+  
+  /*Navbar*/
+  .navbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: var(--transition);
+  }
+  .navbar.scrolled {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: rgb(203, 222, 111);
+    box-shadow: var(--shadow);
+  }
+  .navbar-toggler {
+    border-radius: 0;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  @media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+  .navbar .navbar-nav .nav-link {
+    font-weight: 700;
+    color: var(--c-dark);
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    color: var(--c-brand);
+  }
+  .navbar .navbar-nav .nav-link.active {
+    color: var(--c-brand);
+  }
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--c-dark);
+  }
+  
+  /*Section*/
+  .section-title {
+    margin-bottom: 60px;
+  }
+  .section-title .line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+  }
+  .section-title p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*# sourceMappingURL=style.css.map */
